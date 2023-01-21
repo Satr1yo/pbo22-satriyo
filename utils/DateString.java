@@ -3,24 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package hotell;
+package utils;
 
-/**
- *
- * @author RIO
- */
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
 public class DateString {
-    public static String now () {
+
+    public static String now() {
         Locale locale = Locale.forLanguageTag("id");
-        String patern = "dd-mm-yy H:m:s";
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(patern, locale);
+        String pattern = "dd-MM-yyyy H:m:s";
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(pattern, locale);
         LocalDateTime dateTime = LocalDateTime.now();
         return dateTime.format(formatter);
-        
     }
-    
 }
