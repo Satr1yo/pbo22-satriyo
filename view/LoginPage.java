@@ -25,7 +25,6 @@ public class LoginPage {
         String str = """
                 ================== NEO HOTEL  ================
                 1. Masuk Staff
-                2. Lihat Staff
                 0. Keluar
                 ==============================================
                 """;
@@ -51,19 +50,7 @@ public class LoginPage {
             System.out.println();
         } while (menu != 0);
     }
-    public void baruStaff() {
-        String nama, nik,password;
-        
-        System.out.println("masukan nama");
-        nama = scanner.nextLine();
-        
-        System.out.println("masukan nik");
-        nik = scanner.nextLine();
-        
-        System.out.println("masukan password");
-        password = scanner.nextLine();
-        
-}
+    
     private void loginMenu() {
         String nip, password;
         boolean status = false;
